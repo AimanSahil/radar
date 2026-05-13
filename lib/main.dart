@@ -45,7 +45,7 @@ class _RadarHomeState extends State<RadarHome>
   void initState() {
     super.initState();
 
-    // UI must load FIRST before socket starts
+    
     Future.delayed(const Duration(milliseconds: 300), initWebSocket);
 
     _controller = AnimationController(
